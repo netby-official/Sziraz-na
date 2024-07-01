@@ -6,11 +6,15 @@
     <title>1800-as Vadnyugat Faluja</title>
     <style>
 body {
-    font-family: 'Old Western', cursive;
+    font-family: 'Georgia', serif; /* Választható: Georgia font, klasszikus stílusú serif */
     background-color: #f5deb3; /* Világos homokszín */
     margin: 0;
     padding: 0;
     color: #4d2800; /* Sötétbarna szöveg */
+    background-image: url('western-background.jpg'); /* Vadnyugati stílusú háttérkép */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Header and Navigation styling */
@@ -20,6 +24,7 @@ header {
     text-align: center;
     padding: 1rem;
     margin-bottom: 20px;
+    border-bottom: 2px solid #d2b48c; /* Aranyszínű aláhúzás a fejléc alatt */
 }
 
 nav {
@@ -27,6 +32,7 @@ nav {
     padding: 0.5rem;
     text-align: center;
     margin-bottom: 20px;
+    border-bottom: 2px solid #8b4513; /* Mélybarna aláhúzás a navigáción */
 }
 
 nav ul {
@@ -45,11 +51,13 @@ nav ul li {
     max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
-    background-color: #fff; /* Fehér háttér */
+    background-color: rgba(255, 255, 255, 0.8); /* Fehér áttetsző háttér */
     border: 1px solid #8b4513; /* Mélybarna szegély */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     color: #4d2800; /* Sötétbarna szöveg */
+    position: relative;
+    z-index: 1; /* Tartalom legyen előtérben a háttérrel szemben */
 }
 
 /* Content styling */
@@ -89,12 +97,35 @@ a {
     color: #8b4513; /* Mélybarna szín */
     text-decoration: none; /* Nincs aláhúzás alapból */
     transition: color 0.3s ease; /* Sima színváltás hoverre */
+    font-family: 'Georgia', serif; /* Georgia font a linkek számára is */
 }
 
 a:hover {
     color: #d2691e; /* Barna arany szín hoverre */
 }
-    </style>
+
+/* Extra vadnyugati díszítő elemek */
+.header-decor {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 20px;
+    background-color: #8b4513; /* Mélybarna */
+    z-index: 0; /* Háttér a fejléc alá */
+}
+
+.nav-decor {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 10px;
+    background-color: #d2b48c; /* Aranyszín */
+    z-index: 0; /* Háttér a navigáció alá */
+} </style>
 </head>
 <body>
     <header>
