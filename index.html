@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1800-as Vadnyugat Faluja</title>
     <style>
- body {
+body {
     font-family: 'Old Western', cursive;
-    background-color: #f3e0b7; /* Sárgás homokszín */
+    background-color: #f5deb3; /* Világos homokszín */
     margin: 0;
     padding: 0;
+    color: #4d2800; /* Sötétbarna szöveg */
 }
 
 header {
@@ -18,13 +19,35 @@ header {
     text-align: center;
     padding: 1rem;
     margin-bottom: 20px;
+    animation: slideDown 1s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 nav {
-    background-color: #deb887; /* Barna arany */
+    background-color: #d2b48c; /* Aranyszín */
     padding: 0.5rem;
     text-align: center;
     margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 nav ul {
@@ -43,28 +66,46 @@ nav ul li {
     margin: 0 auto;
     padding: 1rem;
     background-color: #fff; /* Fehér háttér */
-    border: 1px solid #d2b48c; /* Arany szegély */
+    border: 1px solid #8b4513; /* Mélybarna szegély */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: #4d2800; /* Sötétbarna szöveg */
+    animation: slideUp 1s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .content {
     margin-top: 1rem;
+    animation: fadeIn 1s ease-out;
 }
 
 .content h2 {
     border-bottom: 2px solid #8b4513; /* Mélybarna aláhúzás */
     padding-bottom: 5px;
     margin-bottom: 10px;
+    color: #8b4513; /* Mélybarna cím */
+    animation: fadeIn 1s ease-out;
 }
 
 .content p {
     line-height: 1.6;
     margin-bottom: 15px;
+    animation: fadeIn 1s ease-out;
 }
 
 .content ul {
     margin-bottom: 15px;
+    animation: fadeIn 1s ease-out;
 }
 
 footer {
@@ -75,6 +116,18 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    animation: slideUp 1s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
     </style>
 </head>
