@@ -13,24 +13,13 @@ body {
     color: #4d2800; /* Sötétbarna szöveg */
 }
 
+/* Header and Navigation styling */
 header {
     background-color: #8b4513; /* Mélybarna */
     color: #fff; /* Fehér szöveg */
     text-align: center;
     padding: 1rem;
     margin-bottom: 20px;
-    animation: slideDown 1s ease-out;
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-50%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
 
 nav {
@@ -38,16 +27,6 @@ nav {
     padding: 0.5rem;
     text-align: center;
     margin-bottom: 20px;
-    animation: fadeIn 1s ease-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 nav ul {
@@ -61,6 +40,7 @@ nav ul li {
     margin-right: 1rem;
 }
 
+/* Container styling */
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -70,23 +50,11 @@ nav ul li {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     color: #4d2800; /* Sötétbarna szöveg */
-    animation: slideUp 1s ease-out;
 }
 
-@keyframes slideUp {
-    from {
-        transform: translateY(50%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
+/* Content styling */
 .content {
     margin-top: 1rem;
-    animation: fadeIn 1s ease-out;
 }
 
 .content h2 {
@@ -94,20 +62,18 @@ nav ul li {
     padding-bottom: 5px;
     margin-bottom: 10px;
     color: #8b4513; /* Mélybarna cím */
-    animation: fadeIn 1s ease-out;
 }
 
 .content p {
     line-height: 1.6;
     margin-bottom: 15px;
-    animation: fadeIn 1s ease-out;
 }
 
 .content ul {
     margin-bottom: 15px;
-    animation: fadeIn 1s ease-out;
 }
 
+/* Footer styling */
 footer {
     background-color: #8b4513; /* Mélybarna */
     color: #fff; /* Fehér szöveg */
@@ -116,18 +82,17 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    animation: slideUp 1s ease-out;
 }
 
-@keyframes slideUp {
-    from {
-        transform: translateY(50%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+/* Link styling */
+a {
+    color: #8b4513; /* Mélybarna szín */
+    text-decoration: none; /* Nincs aláhúzás alapból */
+    transition: color 0.3s ease; /* Sima színváltás hoverre */
+}
+
+a:hover {
+    color: #d2691e; /* Barna arany szín hoverre */
 }
     </style>
 </head>
