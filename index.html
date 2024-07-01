@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1800-as Vadnyugat Faluja</title>
     <style>
+
 body {
     font-family: 'Georgia', serif; /* Választható: Georgia font, klasszikus stílusú serif */
     background-color: #f5deb3; /* Világos homokszín */
@@ -25,6 +26,8 @@ header {
     padding: 1rem;
     margin-bottom: 20px;
     border-bottom: 2px solid #d2b48c; /* Aranyszínű aláhúzás a fejléc alatt */
+    position: relative; /* Relatív pozíció a háttér dekorációhoz */
+    z-index: 1; /* Tartalom előtérben a háttérrel szemben */
 }
 
 nav {
@@ -57,7 +60,7 @@ nav ul li {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     color: #4d2800; /* Sötétbarna szöveg */
     position: relative;
-    z-index: 1; /* Tartalom legyen előtérben a háttérrel szemben */
+    z-index: 1; /* Tartalom előtérben a háttérrel szemben */
 }
 
 /* Content styling */
@@ -98,6 +101,10 @@ a {
     text-decoration: none; /* Nincs aláhúzás alapból */
     transition: color 0.3s ease; /* Sima színváltás hoverre */
     font-family: 'Georgia', serif; /* Georgia font a linkek számára is */
+    background-color: #d2b48c; /* Aranyszínű háttér */
+    padding: 0.5rem 1rem; /* Kicsit nagyobb padding a gomb körül */
+    border-radius: 4px; /* Kerekített sarkok */
+    display: inline-block; /* Blokk elemként viselkedik */
 }
 
 a:hover {
@@ -125,7 +132,9 @@ a:hover {
     height: 10px;
     background-color: #d2b48c; /* Aranyszín */
     z-index: 0; /* Háttér a navigáció alá */
-} </style>
+}
+
+ </style>
 </head>
 <body>
     <header>
